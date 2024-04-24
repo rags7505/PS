@@ -1,0 +1,274 @@
+.home-main {
+  background:#1d252c;
+  background-size: cover;
+  min-height: 100vh;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 15px;
+ 
+}
+
+.home-main nav{
+  font-size: 110%
+}
+
+.body{
+  padding-left: 50px;
+  padding-right: 50px;
+
+}
+
+ /* .main-content > img {
+  /* max-height: 250px; */
+  /* height:auto; */
+  /* width: 300px; */
+  /* max-width: 90%; */
+  /* animation: animateimage 1s linear;
+  float: right;
+  margin-left: 20px;  */ 
+
+.main-content {
+  color: #fff;
+  position: absolute;
+  display:flex;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 75%;
+
+}
+.text-content {
+  flex: 1;
+}
+
+
+.main-content h1 {
+  font-size: 3rem;
+}
+
+.main-content p {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+ 
+}
+
+.gradient-btn {
+  display: grid;
+  place-items: center;
+  text-decoration: none;
+  color: #1d252c;
+  background-image: linear-gradient(
+    to right,
+    #ff8a59 0%,
+    rgb(255, 158, 89) 51%,
+    rgb(228, 104, 15) 100%
+  );
+  border-radius: 5px;
+  background-size: 200% auto;
+  transition: 0.3s ease-in-out;
+}
+
+.main-content .gradient-btn {
+  width: 200px;
+  height: 45px;
+  margin-top: 1.5rem;
+  text-transform: uppercase;
+}
+.image-content {
+  flex: 1;
+  text-align: right;
+  
+}
+.image-content img {
+  max-width: 80%;
+  height: auto;
+}
+
+.gradient-btn:hover {
+  background-position: right center;
+}
+
+@media screen and (max-width: 600px) {
+  .main-content h1 {
+    font-size: 2.25rem;
+  }
+
+  .main-content p {
+    font-size: 1rem;
+  }
+
+  .main-content img {
+    max-height: 25px;
+    width: 30px;
+    max-width: 30%;
+    animation: animateimage 1s linear;
+    
+    
+  }
+
+  .gradient-btn {
+    width: 175px;
+    height: 40px;
+    font-size: 1.2rem;
+  }
+}
+
+#about {
+  padding: 5rem;
+  font-size: 27px;
+  text-align:center;
+  min-height: 100vh;
+  background-color: #ffffff;
+  padding-left: 10px;
+  padding-right: 10px;
+  
+  
+}
+
+.about > h1 {
+  font-size: 3rem;
+  margin: 1rem 0;
+}
+
+.about-sub {
+  display: flex;
+  max-width: 800px;
+  margin: 1rem auto;
+  text-align: left;
+  font-size: 20px;
+  padding: 1rem;
+  
+}
+
+.about-sub > img {
+  max-height: 250px;
+  width: 300px;
+  max-width: 90%;
+  animation: animateimage 1s linear;
+  
+}
+
+@keyframes animateimage {
+  from {
+    transform: translateY(-15px);
+    opacity: 0.5;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.about-sub .sub-sub-about {
+  padding: 1rem;
+  animation: animatetext 0.5s linear;
+  padding-left: 20px;
+  padding-right: 2px;
+}
+
+@keyframes animatetext {
+  from {
+    transform: translateY(15px);
+    opacity: 0.5;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.about-sub .sub-sub-about p {
+  font-size: 20px;
+
+}
+
+.about-sub .gradient-btn {
+  width: 100px;
+  margin-top: 5px;
+  height: 30px;
+  font-size: 12px;
+}
+
+
+@media screen and (max-width: 600px) {
+  .about-sub {
+    flex-direction: column;
+  }
+
+  .about-sub:nth-child(3) {
+    flex-direction: column-reverse;
+  }
+}
+
+.about-companies{
+    max-width: 800px;
+    width: 90%;
+    background-color: #f1f1f1;
+    padding: 1rem .5rem;
+    margin:1rem auto;
+}
+
+.about-companies h1{
+    font-size: 2rem;
+    color: #444;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.about-companies h1 span{
+    color: #000;
+}
+
+.about-companies .company-logos{
+    display: flex;
+    justify-content: space-evenly;
+    color: #666;
+    font-size: 2rem;
+    transition: .3s ease-in;
+    max-width: 75%;
+    margin: 0pc auto;
+}
+
+.about-companies .company-logos .fa:hover{
+    color: #000;
+}
+
+@media screen and (max-width:750px) {
+    .about-companies h1{
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .about-companies h1{
+        font-size: 1.2rem;
+    }
+
+    .about-companies .company-logos{
+        font-size: 1rem;
+    }
+}
+
+.subscribe{
+    text-align: center;
+    padding: 3rem 2rem 2rem 2rem;
+}
+
+.subscribe-box{
+    padding: 10px;
+}
+
+.subscribe-box input{
+    max-width: 300px;
+    width: 65%;
+    padding: 5px 10px;
+    height: 40px;
+}
+
+.subscribe-box button{
+    border: none;
+    background-color: #0072ff;
+    height: 40px;
+    padding: 0 1rem;
+    color: #fff;
+}
